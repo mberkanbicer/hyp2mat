@@ -34,6 +34,8 @@ pub struct Bounds {
     pub y0: f64,
     pub x1: f64,
     pub y1: f64,
+    pub z0: f64,
+    pub z1: f64,
 }
 
 /// A PCB layer.

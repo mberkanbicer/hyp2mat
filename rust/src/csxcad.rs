@@ -95,14 +95,16 @@ fn compute_bounds(pcb: &PCB) -> Bounds {
     }
 
     // Z bounds from stackup
-    let _z_min = pcb.stackup.first().map_or(0.0, |l| l.z0);
-    let _z_max = pcb.stackup.last().map_or(0.0, |l| l.z1);
+    let z_min = pcb.stackup.first().map_or(0.0, |l| l.z0);
+    let z_max = pcb.stackup.last().map_or(0.0, |l| l.z1);
 
     Bounds {
         x0: x_min,
         y0: y_min,
         x1: x_max,
         y1: y_max,
+        z0: z_min,
+        z1: z_max,
     }
 }
 
@@ -148,7 +150,7 @@ fn export_board(out: &mut String, pcb: &PCB, bounds: &Bounds, pcb_outline: bool)
     out.push_str("mesh = {};\n");
     out.push_str(&format!("mesh.x = [{} {}];\n", bounds.x0, bounds.x1));
     out.push_str(&format!("mesh.y = [{} {}];\n", bounds.y0, bounds.y1));
-    out.push_str(&format!("mesh.z = [{} {}];\n", 0.0, 0.0)); // placeholder
+    out.push_str(&format!("mesh.z = [{} {}];\n", bounds.z0, bounds.z1));
     out.push_str("% add mesh\n");
     out.push_str("CSX = DefineRectGrid(CSX, 1, mesh);\n");
 
@@ -206,8 +208,8 @@ fn export_board(out: &mut String, pcb: &PCB, bounds: &Bounds, pcb_outline: bool)
             out.push_str(&format!(
                 "CSX = AddLinPoly(CSX, 'Drill', {}, 2, {}, pgon, {});\n",
                 priority,
-                0.0, // bounds.z_min placeholder
-                0.0  // bounds.z_max - bounds.z_min placeholder
+                bounds.z0,
+                bounds.z1 - bounds.z0
             ));
         }
     }

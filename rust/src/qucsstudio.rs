@@ -134,11 +134,16 @@ fn compute_bounds(pcb: &PCB) -> crate::model::Bounds {
         y_max = 0.0;
     }
 
+    let z_min = pcb.stackup.first().map_or(0.0, |l| l.z0);
+    let z_max = pcb.stackup.last().map_or(0.0, |l| l.z1);
+
     crate::model::Bounds {
         x0: x_min,
         y0: y_min,
         x1: x_max,
         y1: y_max,
+        z0: z_min,
+        z1: z_max,
     }
 }
 
