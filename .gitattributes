@@ -1,0 +1,7 @@
+# Fixture and reference files are hashed byte for byte (manifest.sha256, native
+# dumps and CLI stderr); they must keep their committed bytes on every platform.
+rust/tests/fixtures/** -text
+rust/tests/reference/** -text
+
+# The native differential tooling is shell and C++ source; keep LF.
+*.sh text eol=lf
