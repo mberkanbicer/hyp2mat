@@ -1,0 +1,19 @@
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+board size:
+ x =     0.00 :    30.00 mm
+ y =     0.00 :    20.00 mm
+ z =     0.00 :     1.60 mm
+layers:
+ signal         3.50 um eps_r 1.00 'Top'
+ dielectric     0.40 mm eps_r 4.40 'PP1'
+ plane          3.50 um eps_r 4.30 'GND'
+ dielectric     0.80 mm eps_r 4.60 'CORE'
+ plane          3.50 um eps_r 4.30 'PWR'
+ dielectric     0.40 mm eps_r 4.40 'PP2'
+ signal         3.50 um eps_r 1.00 'Bottom'

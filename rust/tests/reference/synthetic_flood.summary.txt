@@ -1,0 +1,10 @@
+board size:
+ x =     0.00 :    20.00 mm
+ y =     0.00 :    10.00 mm
+ z =     0.00 :     1.50 mm
+layers:
+ signal         3.50 um eps_r 1.00 'Top'
+ dielectric     1.00 mm eps_r 4.50 'DL01'
+ plane          3.50 um eps_r 4.50 'GND'
+ dielectric     0.50 mm eps_r 4.50 'DL02'
+ signal         3.50 um eps_r 1.00 'Bottom'

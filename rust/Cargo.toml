@@ -2,12 +2,14 @@
 name = "hyp2mat-rs"
 version = "0.1.0"
 edition = "2021"
+description = "HyperLynx PCB parsing and CSXCAD/PDF/QucsStudio conversion (Rust port of hyp2mat)"
+license = "GPL-3.0-or-later"
 
 [dependencies]
-num-complex = "0.4"
 clap = { version = "4.5", features = ["derive"] }
 clipper2 = "0.6"
+csxcad-core = { path = "../../CSXCAD/rust" }
 
 [[bin]]
-name = "hyp2mat-rs"
+name = "hyp2mat"
 path = "src/main.rs"

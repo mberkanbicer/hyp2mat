@@ -1,0 +1,13 @@
+Warning: More than one substrate found. Ignoring it.
+Warning: More than one layer found. Ignoring it.
+Device: name=, ref=C1, value=100n, layer_name=Top
+Device: name=TPTP06SQ, ref=TP1, layer_name=Top
+Device: name=TPTP06SQ, ref=TP2, layer_name=Top
+Device: name=TPTP06SQ, ref=TP3, layer_name=Bottom
+Device: name=TPTP06SQ, ref=TP4, layer_name=Bottom
+Port: ref=TP3.TP, x=0.002, y=0.01
+Port: ref=TP4.TP, x=0.018, y=0.01
+Port: ref=TP1.TP, x=0.002, y=0.01
+Port: ref=C1.1, x=0.00935, y=0.01
+Port: ref=C1.2, x=0.01065, y=0.01
+Port: ref=TP2.TP, x=0.018, y=0.01

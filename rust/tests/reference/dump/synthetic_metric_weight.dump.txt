@@ -1,0 +1,387 @@
+unit = 0.01
+metal_thickness_unit = 0.001116
+use_die_for_metal = 0
+min_circle_segments = 8
+arc_precision = 0
+pi = 3.14159
+inches = 0.0254
+copper_imperial_weight = 1.341
+copper_metric_weight = 0.1116
+copper_bulk_resistivity = 1.724e-08
+copper_temperature_coefficient = 0.00393
+fr4_epsilon_r = 4.3
+fr4_loss_tangent = 0.02
+conformal_epsilon_r = 3.3
+board
+ polygon
+  positive 1
+  x = 0.002
+  y = 0
+  x = 0.018
+  y = 0
+  x = 0.018
+  y = 0
+  x = 0.0194142
+  y = 0.000585786
+  x = 0.02
+  y = 0.002
+  x = 0.02
+  y = 0.002
+  x = 0.02
+  y = 0.018
+  x = 0.02
+  y = 0.018
+  x = 0.0194142
+  y = 0.0194142
+  x = 0.018
+  y = 0.02
+  x = 0.018
+  y = 0.02
+  x = 0.002
+  y = 0.02
+  x = 0.002
+  y = 0.02
+  x = 0.000585786
+  y = 0.0194142
+  x = 0
+  y = 0.018
+  x = 0
+  y = 0.018
+  x = 0
+  y = 0.002
+  x = 0
+  y = 0.002
+  x = 0.000585786
+  y = 0.000585786
+  x = 0.002
+  y = 0
+ plane_separation = -1
+ board_attribute
+  name = 'outline'
+  value = 'rounded'
+device
+ device
+  device_type = '?'
+  ref = 'TP1'
+  name = 'pad'
+  value_float = 0
+  value_float_set = 0
+  value_string = ''
+  value_string_set = 0
+  layer_name = 'Top'
+  package = ''
+supplies
+layers
+ layer
+  layer_name = 'Top'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Top
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 0
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 2.232e-05
+  z0 = 0.0016
+  z1 = 0.0016
+ layer
+  layer_name = 'CORE'
+  layer_type = 1 LAYER_DIELECTRIC
+  bulk_resistivity = 0
+  conformal = 0
+  epsilon_r = 4.2
+  layer_name = CORE
+  loss_tangent = 0.02
+  material_name = 
+  plane_separation = 0
+  plating_thickness = 0
+  prepreg = 1
+  temperature_coefficient = 0
+  thickness = 0.0016
+  z0 = 0
+  z1 = 0.0016
+ layer
+  layer_name = 'Bottom'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Bottom
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 0
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 2.232e-05
+  z0 = 0
+  z1 = 0
+padstacks
+net
+ net
+  net_name = 'SIG'
+  polygon id -11
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0158152
+    y = 0.00992346
+    x = 0.0159235
+    y = 0.00981522
+    x = 0.0160765
+    y = 0.00981522
+    x = 0.0161848
+    y = 0.00992346
+    x = 0.0161848
+    y = 0.0100765
+    x = 0.015599
+    y = 0.0114908
+    x = 0.0154908
+    y = 0.011599
+    x = 0.0153377
+    y = 0.011599
+    x = 0.0152294
+    y = 0.0114908
+    x = 0.0152294
+    y = 0.0113377
+  polygon id -10
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0153377
+    y = 0.0112294
+    x = 0.0154908
+    y = 0.0112294
+    x = 0.015599
+    y = 0.0113377
+    x = 0.015599
+    y = 0.0114908
+    x = 0.0154908
+    y = 0.011599
+    x = 0.0140765
+    y = 0.0121848
+    x = 0.0139235
+    y = 0.0121848
+    x = 0.0138152
+    y = 0.0120765
+    x = 0.0138152
+    y = 0.0119235
+    x = 0.0139235
+    y = 0.0118152
+  polygon id -9
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0140765
+    y = 0.0118152
+    x = 0.0141848
+    y = 0.0119235
+    x = 0.0141848
+    y = 0.0120765
+    x = 0.0140765
+    y = 0.0121848
+    x = 0.0139235
+    y = 0.0121848
+    x = 0.0125092
+    y = 0.011599
+    x = 0.012401
+    y = 0.0114908
+    x = 0.012401
+    y = 0.0113377
+    x = 0.0125092
+    y = 0.0112294
+    x = 0.0126623
+    y = 0.0112294
+  polygon id -8
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0127706
+    y = 0.0113377
+    x = 0.0127706
+    y = 0.0114908
+    x = 0.0126623
+    y = 0.011599
+    x = 0.0125092
+    y = 0.011599
+    x = 0.012401
+    y = 0.0114908
+    x = 0.0118152
+    y = 0.0100765
+    x = 0.0118152
+    y = 0.00992346
+    x = 0.0119235
+    y = 0.00981522
+    x = 0.0120765
+    y = 0.00981522
+    x = 0.0121848
+    y = 0.00992346
+  polygon id -7
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0121848
+    y = 0.0100765
+    x = 0.0120765
+    y = 0.0101848
+    x = 0.0119235
+    y = 0.0101848
+    x = 0.0118152
+    y = 0.0100765
+    x = 0.0118152
+    y = 0.00992346
+    x = 0.012401
+    y = 0.00850925
+    x = 0.0125092
+    y = 0.00840101
+    x = 0.0126623
+    y = 0.00840101
+    x = 0.0127706
+    y = 0.00850925
+    x = 0.0127706
+    y = 0.00866232
+  polygon id -6
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0126623
+    y = 0.00877056
+    x = 0.0125092
+    y = 0.00877056
+    x = 0.012401
+    y = 0.00866232
+    x = 0.012401
+    y = 0.00850925
+    x = 0.0125092
+    y = 0.00840101
+    x = 0.0139235
+    y = 0.00781522
+    x = 0.0140765
+    y = 0.00781522
+    x = 0.0141848
+    y = 0.00792346
+    x = 0.0141848
+    y = 0.00807654
+    x = 0.0140765
+    y = 0.00818478
+  polygon id -5
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+    x = 0.012
+    y = 0.008
+  polygon id -4
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.0106
+    y = 0.0086
+    x = 0.0106
+    y = 0.0074
+    x = 0.0094
+    y = 0.0074
+    x = 0.0094
+    y = 0.0086
+  polygon id -3
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0106494
+    y = 0.008
+    x = 0.0104592
+    y = 0.00845922
+    x = 0.01
+    y = 0.00864944
+    x = 0.00954078
+    y = 0.00845922
+    x = 0.00935056
+    y = 0.008
+    x = 0.00954078
+    y = 0.00754078
+    x = 0.01
+    y = 0.00735056
+    x = 0.0104592
+    y = 0.00754078
+  polygon id -2
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.01
+    y = 0.0078
+    x = 0.0101414
+    y = 0.00785858
+    x = 0.0102
+    y = 0.008
+    x = 0.0101414
+    y = 0.00814142
+    x = 0.01
+    y = 0.0082
+    x = 0.004
+    y = 0.0082
+    x = 0.00385858
+    y = 0.00814142
+    x = 0.0038
+    y = 0.008
+    x = 0.00385858
+    y = 0.00785858
+    x = 0.004
+    y = 0.0078
+  vias
+   via
+    x = 0.01
+    y = 0.008
+    layer0_name = Bottom
+    layer1_name = Top
+    radius = 0.0002
+  pins
+   pin
+    x = 0.004
+    y = 0.008
+    pin_reference = TP1.TP
+    padstack_name = 
+    pin_function = 2 PIN_SIM_BOTH
+  unrouted_segments
+   unrouted_segment
+    x1 = 0.01
+    y1 = 0.008
+    layer1_name = Top
+    x2 = 0.014
+    y2 = 0.008
+    layer2_name = Bottom
+    zlayer_name_set = 1
+    zlayer_name = Top
+    width = 0.0002
+    impedance_set = 0
+    impedance = 0
+    delay = 0
+    resistance = 0
+net_class
+end

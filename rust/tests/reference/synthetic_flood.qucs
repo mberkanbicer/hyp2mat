@@ -1,0 +1,15 @@
+<QucsStudio Layout 3.3.1>
+<Properties>
+DataSet=*.dat
+DataDisplay=*.dpl
+OpenDisplay=1
+Grid=0.1 mm
+Mesh=20
+Excite=2|0.0001|0
+Frequency=1 GHz|9 GHz|401
+Boundary=0.01|0.005|2
+Substrate=DL02|4.5|0.0005|0.01|0|3.5e-06
+</Properties>
+<Items>
+Polygon metal0 0.008 0.0049 |0|0|7e-05|3e-05|0.0001|0.0001|7e-05|0.00017|0|0.0002|-0.006|0.0002|-0.00607|0.00017|-0.0061|0.0001|-0.00607|3e-05|-0.006|0
+</Items>

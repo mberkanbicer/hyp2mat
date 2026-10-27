@@ -91,6 +91,8 @@ pub struct PCB {
     pub board: FloatPolygons,
     pub stackup: Vec<Layer>,
     pub via: Vec<Via>,
+    /// Via plating thickness (taken from the first metal layer).
+    pub via_plating_thickness: f64,
     pub device: Vec<Device>,
     pub pin: Vec<Pin>,
 }
@@ -101,6 +103,7 @@ impl Default for PCB {
             board: FloatPolygons { polys: Vec::new() },
             stackup: Vec::new(),
             via: Vec::new(),
+            via_plating_thickness: 0.0,
             device: Vec::new(),
             pin: Vec::new(),
         }

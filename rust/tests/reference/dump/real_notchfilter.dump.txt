@@ -1,0 +1,284 @@
+unit = 0.0254
+metal_thickness_unit = 0.0254
+use_die_for_metal = 0
+min_circle_segments = 8
+arc_precision = 0
+pi = 3.14159
+inches = 0.0254
+copper_imperial_weight = 1.341
+copper_metric_weight = 0.1116
+copper_bulk_resistivity = 1.724e-08
+copper_temperature_coefficient = 0.00393
+fr4_epsilon_r = 4.3
+fr4_loss_tangent = 0.02
+conformal_epsilon_r = 3.3
+board
+ polygon
+  positive 1
+  x = 0
+  y = 0
+  x = 0.0508
+  y = 0
+  x = 0.0508
+  y = 0
+  x = 0.0508
+  y = 0.0381
+  x = 0.0508
+  y = 0.0381
+  x = 0
+  y = 0.0381
+  x = 0
+  y = 0.0381
+  x = 0
+  y = 0
+ plane_separation = -1
+ board_attribute
+device
+ device
+  device_type = '?'
+  ref = 'TP1'
+  name = 'TPTP10SQ'
+  value_float = 0
+  value_float_set = 0
+  value_string = ''
+  value_string_set = 0
+  layer_name = 'Top'
+  package = ''
+ device
+  device_type = '?'
+  ref = 'TP2'
+  name = 'TPTP10SQ'
+  value_float = 0
+  value_float_set = 0
+  value_string = ''
+  value_string_set = 0
+  layer_name = 'Bottom'
+  package = ''
+ device
+  device_type = '?'
+  ref = 'TP3'
+  name = 'TPTP10SQ'
+  value_float = 0
+  value_float_set = 0
+  value_string = ''
+  value_string_set = 0
+  layer_name = 'Top'
+  package = ''
+ device
+  device_type = '?'
+  ref = 'TP4'
+  name = 'TPTP10SQ'
+  value_float = 0
+  value_float_set = 0
+  value_string = ''
+  value_string_set = 0
+  layer_name = 'Bottom'
+  package = ''
+supplies
+layers
+ layer
+  layer_name = 'Top'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Top
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 1.778e-05
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 1.778e-05
+  z0 = 0.00151638
+  z1 = 0.00151638
+ layer
+  layer_name = 'DL01'
+  layer_type = 1 LAYER_DIELECTRIC
+  bulk_resistivity = 0
+  conformal = 0
+  epsilon_r = 4.8
+  layer_name = DL01
+  loss_tangent = 0.02
+  material_name = 
+  plane_separation = 0
+  plating_thickness = 0
+  prepreg = 1
+  temperature_coefficient = 0
+  thickness = 0.00151638
+  z0 = 0
+  z1 = 0.00151638
+ layer
+  layer_name = 'Bottom'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Bottom
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 1.778e-05
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 1.778e-05
+  z0 = 0
+  z1 = 0
+padstacks
+ padstack
+  padstack_name = 'SMD001'
+  drill_size = 0
+  pads
+   pad
+    layer_name = 'Top'
+    pad_type = 0 PAD_TYPE_METAL
+    pad_shape = 1 PAD_SHAPE_RECTANGULAR
+    pad_sx = 0.0009906
+    pad_sy = 0.0009906
+    pad_angle = 0
+    thermal_clear_shape = 0 PAD_SHAPE_OVAL
+    thermal_clear_sx = 0
+    thermal_clear_sy = 0
+    thermal_clear_angle = 0
+ padstack
+  padstack_name = 'SMD002'
+  drill_size = 0
+  pads
+   pad
+    layer_name = 'Bottom'
+    pad_type = 0 PAD_TYPE_METAL
+    pad_shape = 1 PAD_SHAPE_RECTANGULAR
+    pad_sx = 0.0009906
+    pad_sy = 0.0009906
+    pad_angle = 180
+    thermal_clear_shape = 0 PAD_SHAPE_OVAL
+    thermal_clear_sx = 0
+    thermal_clear_sy = 0
+    thermal_clear_angle = 0
+net
+ net
+  net_name = 'GND'
+  polygon id -3
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.0474853
+    y = 0.0182753
+    x = 0.0474853
+    y = 0.0172847
+    x = 0.0464947
+    y = 0.0172847
+    x = 0.0464947
+    y = 0.0182753
+  polygon id -2
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.0043053
+    y = 0.0182753
+    x = 0.0043053
+    y = 0.0172847
+    x = 0.0033147
+    y = 0.0172847
+    x = 0.0033147
+    y = 0.0182753
+  polygon id 1
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.04953
+    y = 0.03683
+    x = 0.04953
+    y = 0.00127
+    x = 0.00127
+    y = 0.00127
+    x = 0.00127
+    y = 0.03683
+    x = 0.04953
+    y = 0.03683
+  vias
+  pins
+   pin
+    x = 0.00381
+    y = 0.01778
+    pin_reference = TP2.TP
+    padstack_name = SMD002
+    pin_function = 2 PIN_SIM_BOTH
+   pin
+    x = 0.04699
+    y = 0.01778
+    pin_reference = TP4.TP
+    padstack_name = SMD002
+    pin_function = 2 PIN_SIM_BOTH
+  unrouted_segments
+ net
+  net_name = 'VX'
+  polygon id -3
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0474853
+    y = 0.0182753
+    x = 0.0474853
+    y = 0.0172847
+    x = 0.0464947
+    y = 0.0172847
+    x = 0.0464947
+    y = 0.0182753
+  polygon id -2
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.0043053
+    y = 0.0182753
+    x = 0.0043053
+    y = 0.0172847
+    x = 0.0033147
+    y = 0.0172847
+    x = 0.0033147
+    y = 0.0182753
+  polygon id 2
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.02286
+    y = 0.01905
+    x = 0.02286
+    y = 0.03175
+    x = 0.0254
+    y = 0.03175
+    x = 0.0254
+    y = 0.01905
+    x = 0.04826
+    y = 0.01905
+    x = 0.04826
+    y = 0.01651
+    x = 0.00254
+    y = 0.01651
+    x = 0.00254
+    y = 0.01905
+    x = 0.02286
+    y = 0.01905
+  vias
+  pins
+   pin
+    x = 0.00381
+    y = 0.01778
+    pin_reference = TP1.TP
+    padstack_name = SMD001
+    pin_function = 2 PIN_SIM_BOTH
+   pin
+    x = 0.04699
+    y = 0.01778
+    pin_reference = TP3.TP
+    padstack_name = SMD001
+    pin_function = 2 PIN_SIM_BOTH
+  unrouted_segments
+net_class
+end

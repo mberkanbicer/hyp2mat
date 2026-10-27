@@ -1,0 +1,14 @@
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+warning: padstack without metal: ANTI
+Warning: More than one substrate found. Ignoring it.
+Warning: More than one substrate found. Ignoring it.
+Warning: More than one layer found. Ignoring it.
+Device: name=0603, ref=R1, value=50, layer_name=Top
+Device: name=0603, ref=C1, value=1n, layer_name=Top
+Port: ref=R1.1, x=0.002, y=0.002
+Port: ref=C1.1, x=0.021, y=0.015

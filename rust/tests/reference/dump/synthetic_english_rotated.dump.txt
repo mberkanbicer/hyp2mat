@@ -1,0 +1,242 @@
+unit = 0.0254
+metal_thickness_unit = 0.0254
+use_die_for_metal = 0
+min_circle_segments = 8
+arc_precision = 0
+pi = 3.14159
+inches = 0.0254
+copper_imperial_weight = 1.341
+copper_metric_weight = 0.1116
+copper_bulk_resistivity = 1.724e-08
+copper_temperature_coefficient = 0.00393
+fr4_epsilon_r = 4.3
+fr4_loss_tangent = 0.02
+conformal_epsilon_r = 3.3
+board
+ polygon
+  positive 1
+  x = 0
+  y = 0
+  x = 0.00254
+  y = 0
+  x = 0.00254
+  y = 0
+  x = 0.00254
+  y = 0.002032
+  x = 0.00254
+  y = 0.002032
+  x = 0
+  y = 0.002032
+  x = 0
+  y = 0.002032
+  x = 0
+  y = 0
+ plane_separation = -1
+ board_attribute
+device
+supplies
+layers
+ layer
+  layer_name = 'Top'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Top
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 0
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 3.556e-05
+  z0 = 0.00151638
+  z1 = 0.00151638
+ layer
+  layer_name = 'DL01'
+  layer_type = 1 LAYER_DIELECTRIC
+  bulk_resistivity = 0
+  conformal = 0
+  epsilon_r = 4.8
+  layer_name = DL01
+  loss_tangent = 0.02
+  material_name = 
+  plane_separation = 0
+  plating_thickness = 0
+  prepreg = 1
+  temperature_coefficient = 0
+  thickness = 0.00151638
+  z0 = 0
+  z1 = 0.00151638
+ layer
+  layer_name = 'Bottom'
+  layer_type = 0 LAYER_SIGNAL
+  bulk_resistivity = 1.724e-08
+  conformal = 0
+  epsilon_r = 1
+  layer_name = Bottom
+  loss_tangent = 0
+  material_name = 
+  plane_separation = -1
+  plating_thickness = 0
+  prepreg = 0
+  temperature_coefficient = 0.00393
+  thickness = 3.556e-05
+  z0 = 0
+  z1 = 0
+padstacks
+ padstack
+  padstack_name = 'ROT'
+  drill_size = 0
+  pads
+   pad
+    layer_name = 'Top'
+    pad_type = 0 PAD_TYPE_METAL
+    pad_shape = 1 PAD_SHAPE_RECTANGULAR
+    pad_sx = 0.00127
+    pad_sy = 0.000762
+    pad_angle = 90
+    thermal_clear_shape = 0 PAD_SHAPE_OVAL
+    thermal_clear_sx = 0
+    thermal_clear_sy = 0
+    thermal_clear_angle = 0
+   pad
+    layer_name = 'Bottom'
+    pad_type = 0 PAD_TYPE_METAL
+    pad_shape = 1 PAD_SHAPE_RECTANGULAR
+    pad_sx = 0.00127
+    pad_sy = 0.000762
+    pad_angle = 180
+    thermal_clear_shape = 0 PAD_SHAPE_OVAL
+    thermal_clear_sx = 0
+    thermal_clear_sy = 0
+    thermal_clear_angle = 0
+net
+ net
+  net_name = 'ROTATED'
+  polygon id -8
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.00127
+    y = 0.000889
+    x = 0.0013598
+    y = 0.000926197
+    x = 0.001397
+    y = 0.001016
+    x = 0.0013598
+    y = 0.0011058
+    x = 0.00127
+    y = 0.001143
+    x = 0.000254
+    y = 0.001143
+    x = 0.000164197
+    y = 0.0011058
+    x = 0.000127
+    y = 0.001016
+    x = 0.000164197
+    y = 0.000926197
+    x = 0.000254
+    y = 0.000889
+  polygon id -7
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.001905
+    y = 0.001397
+    x = 0.001905
+    y = 0.000635
+    x = 0.000635
+    y = 0.000635
+    x = 0.000635
+    y = 0.001397
+  polygon id -6
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.001651
+    y = 0.001651
+    x = 0.001651
+    y = 0.000381
+    x = 0.000889
+    y = 0.000381
+    x = 0.000889
+    y = 0.001651
+  polygon id -5
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.001397
+    y = 0.001397
+    x = 0.001397
+    y = 0.000635
+    x = 0.000127
+    y = 0.000635
+    x = 0.000127
+    y = 0.001397
+  polygon id -4
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.001143
+    y = 0.001651
+    x = 0.001143
+    y = 0.000381
+    x = 0.000381
+    y = 0.000381
+    x = 0.000381
+    y = 0.001651
+  polygon id -3
+   polygon
+    positive 1
+    width 0
+    layer_name Bottom
+    x = 0.000889
+    y = 0.001397
+    x = 0.000889
+    y = 0.000635
+    x = -0.000381
+    y = 0.000635
+    x = -0.000381
+    y = 0.001397
+  polygon id -2
+   polygon
+    positive 1
+    width 0
+    layer_name Top
+    x = 0.000635
+    y = 0.001651
+    x = 0.000635
+    y = 0.000381
+    x = -0.000127
+    y = 0.000381
+    x = -0.000127
+    y = 0.001651
+  vias
+  pins
+   pin
+    x = 0.000254
+    y = 0.001016
+    pin_reference = U1.1
+    padstack_name = ROT
+    pin_function = 2 PIN_SIM_BOTH
+   pin
+    x = 0.000762
+    y = 0.001016
+    pin_reference = U1.2
+    padstack_name = ROT
+    pin_function = 2 PIN_SIM_BOTH
+   pin
+    x = 0.00127
+    y = 0.001016
+    pin_reference = U1.3
+    padstack_name = ROT
+    pin_function = 2 PIN_SIM_BOTH
+  unrouted_segments
+net_class
+end

@@ -1,0 +1,9 @@
+Warning: More than one layer found. Ignoring it.
+Device: name=TPTP10SQ, ref=TP1, layer_name=Top
+Device: name=TPTP10SQ, ref=TP2, layer_name=Bottom
+Device: name=TPTP10SQ, ref=TP3, layer_name=Top
+Device: name=TPTP10SQ, ref=TP4, layer_name=Bottom
+Port: ref=TP2.TP, x=0.00381, y=0.01778
+Port: ref=TP4.TP, x=0.04699, y=0.01778
+Port: ref=TP1.TP, x=0.00381, y=0.01778
+Port: ref=TP3.TP, x=0.04699, y=0.01778
